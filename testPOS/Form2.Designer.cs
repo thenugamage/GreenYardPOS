@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             panel1 = new Panel();
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             button1 = new Button();
@@ -47,7 +46,6 @@
             DiscountsBtn = new Button();
             CategoriesBtn = new Button();
             mainpanl = new Panel();
-            label4 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -56,28 +54,15 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button1);
             panel1.Location = new Point(2, 1);
-            panel1.Margin = new Padding(2);
+            panel1.Margin = new Padding(2, 3, 2, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1004, 35);
+            panel1.Size = new Size(1147, 45);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = SystemColors.ActiveCaption;
-            label3.Location = new Point(357, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Helloowww";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -85,10 +70,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             label2.ForeColor = Color.FromArgb(57, 116, 120);
-            label2.Location = new Point(2, 3);
+            label2.Location = new Point(2, 4);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(129, 28);
+            label2.Size = new Size(160, 35);
             label2.TabIndex = 2;
             label2.Text = "GREENYARD";
             // 
@@ -99,10 +84,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(867, 7);
+            label1.Location = new Point(991, 9);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(79, 15);
+            label1.Size = new Size(102, 20);
             label1.TabIndex = 1;
             label1.Text = "Admin Name";
             // 
@@ -113,10 +98,10 @@
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(956, 2);
-            button1.Margin = new Padding(2);
+            button1.Location = new Point(1093, 3);
+            button1.Margin = new Padding(2, 3, 2, 3);
             button1.Name = "button1";
-            button1.Size = new Size(33, 27);
+            button1.Size = new Size(38, 36);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
             // 
@@ -135,10 +120,10 @@
             panel2.Controls.Add(ProductsBtn);
             panel2.Controls.Add(DiscountsBtn);
             panel2.Controls.Add(CategoriesBtn);
-            panel2.Location = new Point(-4, 35);
-            panel2.Margin = new Padding(2);
+            panel2.Location = new Point(-5, 47);
+            panel2.Margin = new Padding(2, 3, 2, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(178, 432);
+            panel2.Size = new Size(203, 575);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
             // 
@@ -149,10 +134,10 @@
             SalesReportsBtn.FlatStyle = FlatStyle.Flat;
             SalesReportsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             SalesReportsBtn.ForeColor = Color.White;
-            SalesReportsBtn.Location = new Point(5, 302);
-            SalesReportsBtn.Margin = new Padding(2);
+            SalesReportsBtn.Location = new Point(6, 403);
+            SalesReportsBtn.Margin = new Padding(2, 3, 2, 3);
             SalesReportsBtn.Name = "SalesReportsBtn";
-            SalesReportsBtn.Size = new Size(168, 37);
+            SalesReportsBtn.Size = new Size(192, 49);
             SalesReportsBtn.TabIndex = 25;
             SalesReportsBtn.Text = "Sales Reports";
             SalesReportsBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -167,10 +152,10 @@
             button12.FlatStyle = FlatStyle.Flat;
             button12.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button12.ForeColor = Color.White;
-            button12.Location = new Point(86, 370);
-            button12.Margin = new Padding(2);
+            button12.Location = new Point(98, 493);
+            button12.Margin = new Padding(2, 3, 2, 3);
             button12.Name = "button12";
-            button12.Size = new Size(64, 19);
+            button12.Size = new Size(73, 25);
             button12.TabIndex = 16;
             button12.Text = "Log Out";
             button12.TextAlign = ContentAlignment.MiddleLeft;
@@ -184,10 +169,10 @@
             BillsBtn.FlatStyle = FlatStyle.Flat;
             BillsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             BillsBtn.ForeColor = Color.White;
-            BillsBtn.Location = new Point(5, 266);
-            BillsBtn.Margin = new Padding(2);
+            BillsBtn.Location = new Point(6, 355);
+            BillsBtn.Margin = new Padding(2, 3, 2, 3);
             BillsBtn.Name = "BillsBtn";
-            BillsBtn.Size = new Size(168, 37);
+            BillsBtn.Size = new Size(192, 49);
             BillsBtn.TabIndex = 24;
             BillsBtn.Text = "Bills";
             BillsBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -202,10 +187,10 @@
             button11.BackgroundImageLayout = ImageLayout.Stretch;
             button11.FlatAppearance.BorderSize = 0;
             button11.FlatStyle = FlatStyle.Flat;
-            button11.Location = new Point(54, 368);
-            button11.Margin = new Padding(2);
+            button11.Location = new Point(62, 491);
+            button11.Margin = new Padding(2, 3, 2, 3);
             button11.Name = "button11";
-            button11.Size = new Size(27, 24);
+            button11.Size = new Size(31, 32);
             button11.TabIndex = 15;
             button11.UseVisualStyleBackColor = false;
             // 
@@ -216,10 +201,10 @@
             SalesBtn.FlatStyle = FlatStyle.Flat;
             SalesBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             SalesBtn.ForeColor = Color.White;
-            SalesBtn.Location = new Point(5, 229);
-            SalesBtn.Margin = new Padding(2);
+            SalesBtn.Location = new Point(6, 305);
+            SalesBtn.Margin = new Padding(2, 3, 2, 3);
             SalesBtn.Name = "SalesBtn";
-            SalesBtn.Size = new Size(168, 37);
+            SalesBtn.Size = new Size(192, 49);
             SalesBtn.TabIndex = 23;
             SalesBtn.Text = "Sales";
             SalesBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -233,10 +218,10 @@
             StocksBtn.FlatStyle = FlatStyle.Flat;
             StocksBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             StocksBtn.ForeColor = Color.White;
-            StocksBtn.Location = new Point(5, 192);
-            StocksBtn.Margin = new Padding(2);
+            StocksBtn.Location = new Point(6, 256);
+            StocksBtn.Margin = new Padding(2, 3, 2, 3);
             StocksBtn.Name = "StocksBtn";
-            StocksBtn.Size = new Size(168, 37);
+            StocksBtn.Size = new Size(192, 49);
             StocksBtn.TabIndex = 22;
             StocksBtn.Text = "Stocks";
             StocksBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -250,10 +235,10 @@
             CustomersBtn.FlatStyle = FlatStyle.Flat;
             CustomersBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             CustomersBtn.ForeColor = Color.White;
-            CustomersBtn.Location = new Point(5, 9);
-            CustomersBtn.Margin = new Padding(2);
+            CustomersBtn.Location = new Point(6, 12);
+            CustomersBtn.Margin = new Padding(2, 3, 2, 3);
             CustomersBtn.Name = "CustomersBtn";
-            CustomersBtn.Size = new Size(168, 37);
+            CustomersBtn.Size = new Size(192, 49);
             CustomersBtn.TabIndex = 17;
             CustomersBtn.Text = "Customers";
             CustomersBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -267,10 +252,10 @@
             SuppliersBtn.FlatStyle = FlatStyle.Flat;
             SuppliersBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             SuppliersBtn.ForeColor = Color.White;
-            SuppliersBtn.Location = new Point(5, 156);
-            SuppliersBtn.Margin = new Padding(2);
+            SuppliersBtn.Location = new Point(6, 208);
+            SuppliersBtn.Margin = new Padding(2, 3, 2, 3);
             SuppliersBtn.Name = "SuppliersBtn";
-            SuppliersBtn.Size = new Size(168, 37);
+            SuppliersBtn.Size = new Size(192, 49);
             SuppliersBtn.TabIndex = 21;
             SuppliersBtn.Text = "Suppliers";
             SuppliersBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -284,10 +269,10 @@
             ProductsBtn.FlatStyle = FlatStyle.Flat;
             ProductsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             ProductsBtn.ForeColor = Color.White;
-            ProductsBtn.Location = new Point(5, 46);
-            ProductsBtn.Margin = new Padding(2);
+            ProductsBtn.Location = new Point(6, 61);
+            ProductsBtn.Margin = new Padding(2, 3, 2, 3);
             ProductsBtn.Name = "ProductsBtn";
-            ProductsBtn.Size = new Size(168, 37);
+            ProductsBtn.Size = new Size(192, 49);
             ProductsBtn.TabIndex = 18;
             ProductsBtn.Text = "Products";
             ProductsBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -301,10 +286,10 @@
             DiscountsBtn.FlatStyle = FlatStyle.Flat;
             DiscountsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DiscountsBtn.ForeColor = Color.White;
-            DiscountsBtn.Location = new Point(5, 119);
-            DiscountsBtn.Margin = new Padding(2);
+            DiscountsBtn.Location = new Point(6, 159);
+            DiscountsBtn.Margin = new Padding(2, 3, 2, 3);
             DiscountsBtn.Name = "DiscountsBtn";
-            DiscountsBtn.Size = new Size(168, 37);
+            DiscountsBtn.Size = new Size(192, 49);
             DiscountsBtn.TabIndex = 20;
             DiscountsBtn.Text = "Discounts";
             DiscountsBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -318,10 +303,10 @@
             CategoriesBtn.FlatStyle = FlatStyle.Flat;
             CategoriesBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             CategoriesBtn.ForeColor = Color.White;
-            CategoriesBtn.Location = new Point(5, 82);
-            CategoriesBtn.Margin = new Padding(2);
+            CategoriesBtn.Location = new Point(6, 109);
+            CategoriesBtn.Margin = new Padding(2, 3, 2, 3);
             CategoriesBtn.Name = "CategoriesBtn";
-            CategoriesBtn.Size = new Size(168, 37);
+            CategoriesBtn.Size = new Size(192, 49);
             CategoriesBtn.TabIndex = 19;
             CategoriesBtn.Text = "Categories";
             CategoriesBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -331,32 +316,23 @@
             // mainpanl
             // 
             mainpanl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            mainpanl.Location = new Point(177, 38);
-            mainpanl.Margin = new Padding(2);
+            mainpanl.Location = new Point(202, 51);
+            mainpanl.Margin = new Padding(2, 3, 2, 3);
             mainpanl.Name = "mainpanl";
-            mainpanl.Size = new Size(828, 428);
+            mainpanl.Size = new Size(946, 571);
             mainpanl.TabIndex = 2;
             mainpanl.Paint += panel3_Paint_1;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(445, 8);
-            label4.Name = "label4";
-            label4.Size = new Size(27, 15);
-            label4.TabIndex = 4;
-            label4.Text = "text";
-            // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(36, 54, 66);
-            ClientSize = new Size(1013, 472);
+            ClientSize = new Size(1158, 629);
             Controls.Add(mainpanl);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NAv";
@@ -386,7 +362,5 @@
         private Button BillsBtn;
         private Button SalesBtn;
         private Panel mainpanl;
-        private Label label3;
-        private Label label4;
     }
 }
