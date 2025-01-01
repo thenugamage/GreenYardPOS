@@ -24,9 +24,23 @@ namespace testPOS
 
         private void label2_Click(object sender, EventArgs e)
         {
-            AddNewSupliers addNewCategory = new AddNewSupliers();
-            this.Controls.Add(addNewCategory);
-            addNewCategory.BringToFront();
+            //navigate to AddNewSuplier.cs user control
+            AddNewSupliers addNewSuplier = new AddNewSupliers();
+            addNewSuplier.Dock = DockStyle.Fill;
+            this.Controls.Add(addNewSuplier);
+            addNewSuplier.BringToFront();
+
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            //navigate to AddNewSupplier.cs user control
+            AddNewSupliers addNewSupplier = new AddNewSupliers();
+            addNewSupplier.Dock = DockStyle.Fill;
+            this.Controls.Add(addNewSupplier);
+            addNewSupplier.BringToFront();
+
         }
     }
 }

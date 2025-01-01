@@ -43,7 +43,6 @@ namespace testPOS
             panel1.Controls.Add(addNewCategory);
         }
 
-
         private void Categories_Load(object sender, EventArgs e)
         {
 
@@ -51,6 +50,35 @@ namespace testPOS
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Product user control
+            Product productControl = new Product();
+
+            // Clear existing controls if needed
+            this.Controls.Clear();
+
+            // Add the Product user control to the current control's collection
+            this.Controls.Add(productControl);
+
+            // Bring the Product user control to the front
+            productControl.BringToFront();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            //navigate to Add New Categorey user control
+            Add_New_Categorey addNewCategory = new Add_New_Categorey();
+            this.Controls.Add(addNewCategory);
+            addNewCategory.BringToFront();
 
         }
     }

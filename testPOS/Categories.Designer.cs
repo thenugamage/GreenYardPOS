@@ -34,15 +34,19 @@
             CategoryID = new DataGridViewTextBoxColumn();
             CategoryName = new DataGridViewTextBoxColumn();
             CategoryDiscription = new DataGridViewTextBoxColumn();
-            label2 = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            label6 = new Label();
+            label5 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            pictureBox5 = new PictureBox();
+            label4 = new Label();
+            pictureBox4 = new PictureBox();
+            label3 = new Label();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -50,9 +54,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(37, 76);
+            label1.Location = new Point(23, 48);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(186, 51);
+            label1.Size = new Size(118, 32);
             label1.TabIndex = 13;
             label1.Text = "Category";
             label1.Click += label1_Click;
@@ -62,10 +67,11 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CategoryID, CategoryName, CategoryDiscription });
-            dataGridView1.Location = new Point(33, 150);
+            dataGridView1.Location = new Point(20, 94);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(1485, 83);
+            dataGridView1.Size = new Size(914, 52);
             dataGridView1.TabIndex = 25;
             // 
             // CategoryID
@@ -86,80 +92,140 @@
             CategoryDiscription.MinimumWidth = 10;
             CategoryDiscription.Name = "CategoryDiscription";
             // 
-            // label2
+            // label6
             // 
-            label2.Anchor = AnchorStyles.Bottom;
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(36, 54, 66);
-            label2.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(592, 816);
-            label2.Name = "label2";
-            label2.Size = new Size(261, 37);
-            label2.TabIndex = 58;
-            label2.Text = "Add New Category";
-            label2.Click += label2_Click_1;
+            label6.Anchor = AnchorStyles.Bottom;
+            label6.AutoSize = true;
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(221, 453);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(113, 20);
+            label6.TabIndex = 50;
+            label6.Text = "Category Name";
             // 
-            // pictureBox3
+            // label5
             // 
-            pictureBox3.Anchor = AnchorStyles.Bottom;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(571, 799);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(307, 70);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 57;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            label5.Anchor = AnchorStyles.Bottom;
+            label5.AutoSize = true;
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(235, 507);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(88, 20);
+            label5.TabIndex = 51;
+            label5.Text = "Category ID";
             // 
-            // pictureBox2
+            // textBox1
             // 
-            pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(11, 832);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 55);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 60;
-            pictureBox2.TabStop = false;
+            textBox1.Anchor = AnchorStyles.Bottom;
+            textBox1.Font = new Font("Segoe UI", 12F);
+            textBox1.Location = new Point(345, 445);
+            textBox1.Margin = new Padding(2);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Category Name";
+            textBox1.Size = new Size(355, 40);
+            textBox1.TabIndex = 52;
             // 
-            // pictureBox1
+            // textBox2
             // 
-            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1465, 832);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(53, 55);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 59;
-            pictureBox1.TabStop = false;
+            textBox2.Anchor = AnchorStyles.Bottom;
+            textBox2.Font = new Font("Segoe UI", 12F);
+            textBox2.Location = new Point(345, 499);
+            textBox2.Margin = new Padding(2);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Category ID";
+            textBox2.Size = new Size(355, 40);
+            textBox2.TabIndex = 53;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Anchor = AnchorStyles.Bottom;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(23, 452);
+            pictureBox5.Margin = new Padding(2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(189, 44);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 54;
+            pictureBox5.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Bottom;
+            label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(36, 54, 66);
+            label4.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(33, 462);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(164, 23);
+            label4.TabIndex = 55;
+            label4.Text = "Add New Category";
+            label4.Click += label4_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Bottom;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(730, 452);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(189, 44);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 56;
+            pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Bottom;
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(36, 54, 66);
+            label3.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(748, 462);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(153, 23);
+            label3.TabIndex = 57;
+            label3.Text = "Remove Category";
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.Location = new Point(10, 12);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(6, 8);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1524, 898);
+            panel1.Size = new Size(938, 561);
             panel1.TabIndex = 61;
             // 
             // Categories
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(57, 116, 120);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label2);
-            Controls.Add(pictureBox3);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Controls.Add(panel1);
+            Margin = new Padding(2);
             Name = "Categories";
-            Size = new Size(1537, 913);
+            Size = new Size(946, 571);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,10 +237,14 @@
         private DataGridViewTextBoxColumn CategoryID;
         private DataGridViewTextBoxColumn CategoryName;
         private DataGridViewTextBoxColumn CategoryDiscription;
-        private Label label2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
+        private Label label6;
+        private Label label5;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private PictureBox pictureBox5;
+        private Label label4;
+        private PictureBox pictureBox4;
+        private Label label3;
         private Panel panel1;
     }
 }

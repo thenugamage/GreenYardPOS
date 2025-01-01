@@ -36,5 +36,18 @@ namespace testPOS
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //navigate to Product.cs UserControl
+            Panel mainPanel = this.Parent as Panel;
+            if (mainPanel != null)
+            {
+                mainPanel.Controls.Clear();
+                Product productControl = new Product();
+                productControl.Dock = DockStyle.Fill;
+                mainPanel.Controls.Add(productControl);
+            }
+        }
     }
 }

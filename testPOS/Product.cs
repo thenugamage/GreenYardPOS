@@ -34,5 +34,36 @@ namespace testPOS
                 mainPanel.Controls.Add(addNewProduct);
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // Assuming you have a panel or some container to hold the UserControl
+            Panel mainPanel = this.Parent as Panel;
+            if (mainPanel != null)
+            {
+                mainPanel.Controls.Clear();
+                Customer customerControl = new Customer();
+                customerControl.Dock = DockStyle.Fill;
+                mainPanel.Controls.Add(customerControl);
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Navigate to Categories UserControl
+            Panel mainPanel = this.Parent as Panel;
+            if (mainPanel != null)
+            {
+                mainPanel.Controls.Clear();
+                Categories categoriesControl = new Categories();
+                categoriesControl.Dock = DockStyle.Fill;
+                mainPanel.Controls.Add(categoriesControl);
+            }
+        }
+
+        private void Product_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -24,13 +24,10 @@ namespace testPOS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            // Assuming you have a Categories user control named 'categoriesUserControl'
-            Categories categoriesUserControl = new Categories();
-
-            // Assuming you have a panel or some container to hold the user control
-            this.Controls.Clear(); // Clear current controls
-            this.Controls.Add(categoriesUserControl); // Add the Categories user control
-            categoriesUserControl.Dock = DockStyle.Fill; // Optional: Dock the user control to fill the container
+            //navigate to the category form
+            Categories cat = new Categories();
+            cat.Show();
+            this.Hide();
         }
     }
 }

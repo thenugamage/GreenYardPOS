@@ -16,5 +16,10 @@ namespace testPOS
         {
             InitializeComponent();
         }
+
+        private void Bills_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,7 +54,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(57, 120, 142);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -91,7 +91,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(57, 120, 142);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -119,7 +119,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(57, 120, 142);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -129,19 +129,7 @@ namespace testPOS
 
         private void DiscountsBtn_Click(object sender, EventArgs e)
         {
-            Discount userControl = new Discount();
-            this.mainpanl.Controls.Clear(); //
-            this.mainpanl.Controls.Add(userControl);
-            userControl.Dock = DockStyle.Fill;
-            CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
-            ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
-            CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(57, 120, 142);
-            SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
-            StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
-            SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            BillsBtn.BackColor = Color.FromArgb(36, 54, 66);
-            SalesReportsBtn.BackColor = Color.FromArgb(36, 54, 66);
+
         }
 
         private void SuppliersBtn_Click(object sender, EventArgs e)
@@ -153,7 +141,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(57, 120, 142);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -170,7 +158,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(57, 120, 142);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -187,7 +175,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(57, 120, 142);
@@ -204,7 +192,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -221,7 +209,7 @@ namespace testPOS
             CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
             ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
             SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
             StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
             SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -244,6 +232,27 @@ namespace testPOS
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Employeebtn_Click(object sender, EventArgs e)
+        {
+            Employee userControl = new Employee();
+            this.mainpanl.Controls.Clear();
+            this.mainpanl.Controls.Add(userControl);
+            userControl.Dock = DockStyle.Fill;
+            CustomersBtn.BackColor = Color.FromArgb(36, 54, 66);
+            ProductsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.BackColor = Color.FromArgb(57, 120, 142);
+            SuppliersBtn.BackColor = Color.FromArgb(36, 54, 66);
+            StocksBtn.BackColor = Color.FromArgb(36, 54, 66);
+            SalesBtn.BackColor = Color.FromArgb(36, 54, 66);
+            BillsBtn.BackColor = Color.FromArgb(36, 54, 66);
+            SalesReportsBtn.BackColor = Color.FromArgb(36, 54, 66);
+        }
+        private void EmployeeBtn_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

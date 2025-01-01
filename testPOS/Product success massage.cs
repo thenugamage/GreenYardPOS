@@ -21,5 +21,14 @@ namespace testPOS
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //navigate to the Product.cs usercontroller
+            Product cat = new Product();
+            cat.Show();
+            this.Hide();
+
+        }
     }
 }

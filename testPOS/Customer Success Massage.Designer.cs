@@ -43,21 +43,24 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(56, 11);
+            label1.Location = new Point(34, 7);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(67, 32);
+            label1.Size = new Size(42, 20);
             label1.TabIndex = 3;
             label1.Text = "Back";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Location = new Point(2, 2);
+            pictureBox2.Margin = new Padding(2, 2, 2, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(47, 49);
+            pictureBox2.Size = new Size(29, 31);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // panel1
             // 
@@ -67,9 +70,10 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(556, 124);
+            panel1.Location = new Point(342, 78);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(772, 613);
+            panel1.Size = new Size(477, 385);
             panel1.TabIndex = 1;
             // 
             // textBox2
@@ -78,10 +82,11 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(104, 244);
+            textBox2.Location = new Point(64, 152);
+            textBox2.Margin = new Padding(2, 2, 2, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(540, 85);
+            textBox2.Size = new Size(332, 53);
             textBox2.TabIndex = 1;
             textBox2.Text = "Added Successfully!";
             textBox2.TextAlign = HorizontalAlignment.Center;
@@ -92,23 +97,25 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 10F);
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(35, 335);
+            textBox1.Location = new Point(22, 209);
+            textBox1.Margin = new Padding(2, 2, 2, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(676, 92);
+            textBox1.Size = new Size(416, 58);
             textBox1.TabIndex = 0;
             textBox1.Text = "Customer has been successfully added! \r\nSearch for the customer using their contact number.\r\n";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // Customer_Success_Massage
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(36, 54, 66);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1881, 1008);
+            ClientSize = new Size(1158, 630);
             Controls.Add(panel1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Customer_Success_Massage";
             Text = "Customer_Success_Massage";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

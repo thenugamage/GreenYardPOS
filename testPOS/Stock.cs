@@ -16,5 +16,18 @@ namespace testPOS
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //navigate to AddNewStock.cs UserControl
+            Panel mainPanel = this.Parent as Panel;
+            if (mainPanel != null)
+            {
+                mainPanel.Controls.Clear();
+                AddNewStock addNewStockControl = new AddNewStock();
+                addNewStockControl.Dock = DockStyle.Fill;
+                mainPanel.Controls.Add(addNewStockControl);
+            }
+        }
     }
 }

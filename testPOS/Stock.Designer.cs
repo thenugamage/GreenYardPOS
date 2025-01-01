@@ -32,8 +32,6 @@
             pictureBox4 = new PictureBox();
             textBox1 = new TextBox();
             label8 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
             stockID = new DataGridViewTextBoxColumn();
             productID = new DataGridViewTextBoxColumn();
@@ -42,10 +40,11 @@
             lastRestockDate = new DataGridViewTextBoxColumn();
             supplierID = new DataGridViewTextBoxColumn();
             lastUpdated = new DataGridViewTextBoxColumn();
+            label2 = new Label();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox4
@@ -53,9 +52,10 @@
             pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox4.BackColor = Color.White;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1461, 31);
+            pictureBox4.Location = new Point(899, 19);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(63, 58);
+            pictureBox4.Size = new Size(39, 36);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 47;
             pictureBox4.TabStop = false;
@@ -64,11 +64,12 @@
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(949, 28);
+            textBox1.Location = new Point(584, 18);
+            textBox1.Margin = new Padding(2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search By  ID";
-            textBox1.Size = new Size(575, 61);
+            textBox1.Size = new Size(355, 40);
             textBox1.TabIndex = 46;
             // 
             // label8
@@ -76,33 +77,12 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(12, 119);
+            label8.Location = new Point(7, 74);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(119, 51);
+            label8.Size = new Size(75, 32);
             label8.TabIndex = 45;
             label8.Text = "Stock";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(17, 830);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 55);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 44;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1471, 830);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(53, 55);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 43;
-            pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -111,10 +91,11 @@
             dataGridView1.BackgroundColor = Color.FromArgb(57, 116, 120);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { stockID, productID, quantity, minimumStockLevel, lastRestockDate, supplierID, lastUpdated });
-            dataGridView1.Location = new Point(12, 186);
+            dataGridView1.Location = new Point(7, 116);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(1488, 77);
+            dataGridView1.Size = new Size(916, 60);
             dataGridView1.TabIndex = 48;
             // 
             // stockID
@@ -159,23 +140,50 @@
             lastUpdated.MinimumWidth = 10;
             lastUpdated.Name = "lastUpdated";
             // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Bottom;
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(36, 54, 66);
+            label2.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(402, 477);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(135, 23);
+            label2.TabIndex = 50;
+            label2.Text = "Add New Stock";
+            label2.Click += label2_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Bottom;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(376, 467);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(189, 44);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 49;
+            pictureBox3.TabStop = false;
+            // 
             // Stock
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(57, 116, 120);
+            Controls.Add(label2);
+            Controls.Add(pictureBox3);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox4);
             Controls.Add(textBox1);
             Controls.Add(label8);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Margin = new Padding(2);
             Name = "Stock";
-            Size = new Size(1537, 913);
+            Size = new Size(946, 571);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,8 +193,6 @@
         private PictureBox pictureBox4;
         private TextBox textBox1;
         private Label label8;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn stockID;
         private DataGridViewTextBoxColumn productID;
@@ -195,5 +201,7 @@
         private DataGridViewTextBoxColumn lastRestockDate;
         private DataGridViewTextBoxColumn supplierID;
         private DataGridViewTextBoxColumn lastUpdated;
+        private Label label2;
+        private PictureBox pictureBox3;
     }
 }

@@ -34,6 +34,7 @@
             label1 = new Label();
             button1 = new Button();
             panel2 = new Panel();
+            EmployeeBtn = new Button();
             SalesReportsBtn = new Button();
             button12 = new Button();
             BillsBtn = new Button();
@@ -43,7 +44,6 @@
             CustomersBtn = new Button();
             SuppliersBtn = new Button();
             ProductsBtn = new Button();
-            DiscountsBtn = new Button();
             CategoriesBtn = new Button();
             mainpanl = new Panel();
             panel1.SuspendLayout();
@@ -109,6 +109,7 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(EmployeeBtn);
             panel2.Controls.Add(SalesReportsBtn);
             panel2.Controls.Add(button12);
             panel2.Controls.Add(BillsBtn);
@@ -118,7 +119,6 @@
             panel2.Controls.Add(CustomersBtn);
             panel2.Controls.Add(SuppliersBtn);
             panel2.Controls.Add(ProductsBtn);
-            panel2.Controls.Add(DiscountsBtn);
             panel2.Controls.Add(CategoriesBtn);
             panel2.Location = new Point(-5, 47);
             panel2.Margin = new Padding(2, 3, 2, 3);
@@ -126,6 +126,23 @@
             panel2.Size = new Size(203, 575);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
+            // 
+            // EmployeeBtn
+            // 
+            EmployeeBtn.BackColor = Color.FromArgb(36, 54, 66);
+            EmployeeBtn.FlatAppearance.BorderSize = 0;
+            EmployeeBtn.FlatStyle = FlatStyle.Flat;
+            EmployeeBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            EmployeeBtn.ForeColor = Color.White;
+            EmployeeBtn.Location = new Point(6, 159);
+            EmployeeBtn.Margin = new Padding(2, 3, 2, 3);
+            EmployeeBtn.Name = "EmployeeBtn";
+            EmployeeBtn.Size = new Size(192, 49);
+            EmployeeBtn.TabIndex = 18;
+            EmployeeBtn.Text = "Employee";
+            EmployeeBtn.TextAlign = ContentAlignment.MiddleLeft;
+            EmployeeBtn.UseVisualStyleBackColor = false;
+            EmployeeBtn.Click += Employeebtn_Click;
             // 
             // SalesReportsBtn
             // 
@@ -152,10 +169,10 @@
             button12.FlatStyle = FlatStyle.Flat;
             button12.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button12.ForeColor = Color.White;
-            button12.Location = new Point(98, 493);
+            button12.Location = new Point(98, 489);
             button12.Margin = new Padding(2, 3, 2, 3);
             button12.Name = "button12";
-            button12.Size = new Size(73, 25);
+            button12.Size = new Size(73, 35);
             button12.TabIndex = 16;
             button12.Text = "Log Out";
             button12.TextAlign = ContentAlignment.MiddleLeft;
@@ -279,23 +296,6 @@
             ProductsBtn.UseVisualStyleBackColor = false;
             ProductsBtn.Click += button14_Click;
             // 
-            // DiscountsBtn
-            // 
-            DiscountsBtn.BackColor = Color.FromArgb(36, 54, 66);
-            DiscountsBtn.FlatAppearance.BorderSize = 0;
-            DiscountsBtn.FlatStyle = FlatStyle.Flat;
-            DiscountsBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DiscountsBtn.ForeColor = Color.White;
-            DiscountsBtn.Location = new Point(6, 159);
-            DiscountsBtn.Margin = new Padding(2, 3, 2, 3);
-            DiscountsBtn.Name = "DiscountsBtn";
-            DiscountsBtn.Size = new Size(192, 49);
-            DiscountsBtn.TabIndex = 20;
-            DiscountsBtn.Text = "Discounts";
-            DiscountsBtn.TextAlign = ContentAlignment.MiddleLeft;
-            DiscountsBtn.UseVisualStyleBackColor = false;
-            DiscountsBtn.Click += DiscountsBtn_Click;
-            // 
             // CategoriesBtn
             // 
             CategoriesBtn.BackColor = Color.FromArgb(36, 54, 66);
@@ -357,10 +357,10 @@
         private Button CategoriesBtn;
         private Button StocksBtn;
         private Button SuppliersBtn;
-        private Button DiscountsBtn;
         private Button SalesReportsBtn;
         private Button BillsBtn;
         private Button SalesBtn;
         private Panel mainpanl;
+        private Button EmployeeBtn;
     }
 }

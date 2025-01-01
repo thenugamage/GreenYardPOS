@@ -16,5 +16,15 @@ namespace testPOS
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //navigate to the Suplier.cs page
+            Suplier supplier = new Suplier();
+            supplier.Show();
+            this.Hide();
+
+
+        }
     }
 }

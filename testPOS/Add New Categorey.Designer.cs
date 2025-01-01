@@ -29,124 +29,133 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_New_Categorey));
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            label2 = new Label();
-            pictureBox3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            label3 = new Label();
+            pictureBox1 = new PictureBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            pictureBox4 = new PictureBox();
+            label4 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox2
+            // label3
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(9, 95);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 55);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 67;
-            pictureBox2.TabStop = false;
+            label3.Anchor = AnchorStyles.Bottom;
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(36, 54, 66);
+            label3.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(454, 391);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(44, 23);
+            label3.TabIndex = 86;
+            label3.Text = "Add";
             // 
-            // label1
+            // pictureBox1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(78, 95);
-            label1.Name = "label1";
-            label1.Size = new Size(362, 51);
-            label1.TabIndex = 66;
-            label1.Text = "Add New Category";
+            pictureBox1.Anchor = AnchorStyles.Bottom;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(385, 382);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(189, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 85;
+            pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // textBox4
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(376, 431);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Discription";
-            textBox2.Size = new Size(739, 61);
-            textBox2.TabIndex = 69;
+            textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox4.Font = new Font("Segoe UI", 12F);
+            textBox4.Location = new Point(234, 294);
+            textBox4.Margin = new Padding(2);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Description";
+            textBox4.Size = new Size(453, 40);
+            textBox4.TabIndex = 83;
             // 
-            // textBox1
+            // textBox5
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(376, 221);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Customer Name";
-            textBox1.Size = new Size(739, 61);
-            textBox1.TabIndex = 68;
+            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox5.Font = new Font("Segoe UI", 12F);
+            textBox5.Location = new Point(234, 163);
+            textBox5.Margin = new Padding(2);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "Customer Name";
+            textBox5.Size = new Size(453, 40);
+            textBox5.TabIndex = 82;
             // 
-            // textBox3
+            // textBox6
             // 
-            textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox3.Font = new Font("Segoe UI", 12F);
-            textBox3.Location = new Point(376, 326);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "CategoryID";
-            textBox3.Size = new Size(739, 61);
-            textBox3.TabIndex = 70;
+            textBox6.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox6.Font = new Font("Segoe UI", 12F);
+            textBox6.Location = new Point(234, 229);
+            textBox6.Margin = new Padding(2);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.PlaceholderText = "CategoryID";
+            textBox6.Size = new Size(453, 40);
+            textBox6.TabIndex = 84;
             // 
-            // label2
+            // pictureBox4
             // 
-            label2.Anchor = AnchorStyles.Bottom;
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(36, 54, 66);
-            label2.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(683, 549);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 37);
-            label2.TabIndex = 72;
-            label2.Text = "Add";
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(24, 26);
+            pictureBox4.Margin = new Padding(2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(33, 34);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 81;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
-            // pictureBox3
+            // label4
             // 
-            pictureBox3.Anchor = AnchorStyles.Bottom;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(571, 534);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(307, 70);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 71;
-            pictureBox3.TabStop = false;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(66, 26);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(230, 32);
+            label4.TabIndex = 80;
+            label4.Text = "Add New Category";
             // 
             // Add_New_Categorey
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(57, 116, 120);
-            Controls.Add(label2);
-            Controls.Add(pictureBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(textBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(label1);
+            Controls.Add(label3);
+            Controls.Add(pictureBox1);
+            Controls.Add(textBox4);
+            Controls.Add(textBox5);
+            Controls.Add(textBox6);
+            Controls.Add(pictureBox4);
+            Controls.Add(label4);
             Name = "Add_New_Categorey";
-            Size = new Size(1537, 913);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            Size = new Size(946, 571);
+            Load += Add_New_Categorey_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox2;
-        private Label label1;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private Label label2;
-        private PictureBox pictureBox3;
+        private Label label3;
+        private PictureBox pictureBox1;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private PictureBox pictureBox4;
+        private Label label4;
     }
 }
