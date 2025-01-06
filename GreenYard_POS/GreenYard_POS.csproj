@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26F997EF-721C-4340-9D4A-702F267BD5A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GreenYard_POS</RootNamespace>
+    <AssemblyName>GreenYard_POS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\Auth.cs" />
+    <Compile Include="Services\BillService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\DBConnection.cs" />
+    <Compile Include="Services\DiscountService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\SalesService.cs" />
+    <Compile Include="Services\StockService.cs" />
+    <Compile Include="Services\SupplierService.cs" />
+    <Compile Include="Services\Test.cs" />
+    <Compile Include="Views\Scenes\Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Scenes\Discounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Discounts.Designer.cs">
+      <DependentUpon>Discounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Stocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Stocks.Designer.cs">
+      <DependentUpon>Stocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scenes\Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Scenes\Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddDiscount.Designer.cs">
+      <DependentUpon>AddDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\AddSupplier.Designer.cs">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stages\SupplierProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Stages\SupplierProduct.Designer.cs">
+      <DependentUpon>SupplierProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Scenes\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Scenes\Discounts.resx">
+      <DependentUpon>Discounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Stocks.resx">
+      <DependentUpon>Stocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scenes\Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddDiscount.resx">
+      <DependentUpon>AddDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\AddSupplier.resx">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Stages\SupplierProduct.resx">
+      <DependentUpon>SupplierProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
